@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="qross2">
+	<link name="body:1">
+		<inertial>
+			<mass value="0.21300906179523016"/>
+			<origin rpy="0 0 0" xyz="-4.6532229689958465e-06 2.02613768659715e-07 0.149499783028519"/>
+			<inertia ixx="0.0008746561723021564" ixy="2.17614109621413e-05" ixz="-8.653783889274603e-05" iyy="0.0009142729415351802" iyz="3.513255117014799e-05" izz="0.00019437247110899142"/>
+		</inertial>
+		<collision name="body:1_collision">
+			<origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/body.stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</collision>
+		<visual name="body:1_visual">
+			<origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/body.stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</visual>
+	</link>
+	<link name="link1_v2:1">
+		<inertial>
+			<mass value="0.01806249061191869"/>
+			<origin rpy="0 0 0" xyz="-0.012000000000004554 0.03430221861479274 0.007390571133426865"/>
+			<inertia ixx="6.409392219983445e-06" ixy="-1.7844882796506017e-18" ixz="-2.776186585914693e-19" iyy="1.5986990909897969e-06" iyz="5.82149935541798e-07" izz="5.860158067781773e-06"/>
+		</inertial>
+		<collision name="link1_v2:1_collision">
+			<origin rpy="0.0 -0.0 0.0" xyz="-0.011999999999999997 -0.0335 -0.1495"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/link1_v2.stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</collision>
+		<visual name="link1_v2:1_visual">
+			<origin rpy="0.0 -0.0 0.0" xyz="-0.011999999999999997 -0.0335 -0.1495"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/link1_v2.stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</visual>
+	</link>
+	<link name="joint2_v1:1">
+		<inertial>
+			<mass value="0.008101696329809314"/>
+			<origin rpy="0 0 0" xyz="2.220446049250313e-17 0.00399999999999999 -0.006225488817151376"/>
+			<inertia ixx="5.281971367899096e-07" ixy="-1.5618186823132428e-21" ixz="5.456531374627781e-21" iyy="9.33484074084201e-07" iyz="-2.2204460492503132e-20" izz="4.933042984463066e-07"/>
+		</inertial>
+		<collision name="joint2_v1:1_collision">
+			<origin rpy="1.8631790020988908 -1.570796326794896 1.2784136514909032" xyz="-0.01400000000000001 -4.163336342344337e-17 -0.027999999999999997"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/joint2_v1.stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</collision>
+		<visual name="joint2_v1:1_visual">
+			<origin rpy="1.8631790020988908 -1.570796326794896 1.2784136514909032" xyz="-0.01400000000000001 -4.163336342344337e-17 -0.027999999999999997"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/joint2_v1.stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</visual>
+	</link>
+	<link name="link2_v2:1">
+		<inertial>
+			<mass value="0.014589092578228798"/>
+			<origin rpy="0 0 0" xyz="-0.01396500750092743 -1.1102230246251565e-16 -0.028827680965637995"/>
+			<inertia ixx="2.4784263504650285e-05" ixy="-1.2923689896027213e-20" ixz="-1.471678485414524e-08" iyy="2.495370847907803e-05" iyz="-4.4408920985006264e-20" izz="6.405951703585266e-07"/>
+		</inertial>
+		<collision name="link2_v2:1_collision">
+			<origin rpy="0.0 -0.0 0.0" xyz="-0.013999999999999957 -0.10849999999999986 -0.12949999999999998"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/link2_v2.stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</collision>
+		<visual name="link2_v2:1_visual">
+			<origin rpy="0.0 -0.0 0.0" xyz="-0.013999999999999957 -0.10849999999999986 -0.12949999999999998"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/link2_v2.stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</visual>
+	</link>
+	<link name="link1_v2_(1):1">
+		<inertial>
+			<mass value="0.01806249061191869"/>
+			<origin rpy="0 0 0" xyz="0.011999999999995471 -0.034302218614792726 -0.007390571133426838"/>
+			<inertia ixx="6.409392219983534e-06" ixy="1.783719014312136e-18" ixz="2.771309653966556e-19" iyy="1.5986990909898413e-06" iyz="5.821499355418425e-07" izz="5.860158067781773e-06"/>
+		</inertial>
+		<collision name="link1_v2_(1):1_collision">
+			<origin rpy="0.0 -0.0 0.0" xyz="0.012000000000000002 0.033500000000000016 -0.14949999999999997"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/link1_v2_(1).stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</collision>
+		<visual name="link1_v2_(1):1_visual">
+			<origin rpy="0.0 -0.0 0.0" xyz="0.012000000000000002 0.033500000000000016 -0.14949999999999997"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/link1_v2_(1).stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</visual>
+	</link>
+	<link name="joint2_v1_(1):1">
+		<inertial>
+			<mass value="0.008101696329809314"/>
+			<origin rpy="0 0 0" xyz="2.664535259100376e-17 -0.003999999999999976 -0.006225488817151376"/>
+			<inertia ixx="5.281971367899096e-07" ixy="-8.701995076589824e-22" ixz="5.278772887386441e-21" iyy="9.33484074084201e-07" iyz="0.0" izz="4.933042984463176e-07"/>
+		</inertial>
+		<collision name="joint2_v1_(1):1_collision">
+			<origin rpy="-0.872536161365942 -1.570796326794896 -2.269056492223852" xyz="-0.013999999999999997 -0.007999999999999965 -0.027999999999999983"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/joint2_v1_(1).stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</collision>
+		<visual name="joint2_v1_(1):1_visual">
+			<origin rpy="-0.872536161365942 -1.570796326794896 -2.269056492223852" xyz="-0.013999999999999997 -0.007999999999999965 -0.027999999999999983"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/joint2_v1_(1).stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</visual>
+	</link>
+	<link name="link2_v2_(1):1">
+		<inertial>
+			<mass value="0.014589092578228798"/>
+			<origin rpy="0 0 0" xyz="0.013965007500927431 9.71445146547012e-17 -0.028827680965637995"/>
+			<inertia ixx="2.478426350465024e-05" ixy="-1.2663481374630692e-20" ixz="1.4716784854148862e-08" iyy="2.495370847907805e-05" iyz="0.0" izz="6.405951703585266e-07"/>
+		</inertial>
+		<collision name="link2_v2_(1):1_collision">
+			<origin rpy="0.0 -0.0 0.0" xyz="0.014000000000000005 0.10849999999999983 -0.12149999999999998"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/link2_v2_(1).stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</collision>
+		<visual name="link2_v2_(1):1_visual">
+			<origin rpy="0.0 -0.0 0.0" xyz="0.014000000000000005 0.10849999999999983 -0.12149999999999998"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/link2_v2_(1).stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</visual>
+	</link>
+
+  	<gazebo reference="body:1">
+		<selfCollide>true</selfCollide>
+    	<material>Gazebo/Red</material>
+  	</gazebo>
+	<gazebo reference="link1_v2:1">
+		<selfCollide>true</selfCollide>
+    	<material>Gazebo/Blue</material>
+  	</gazebo>
+	<gazebo reference="joint2_v1:1">
+		<selfCollide>true</selfCollide>
+    	<material>Gazebo/Red</material>
+  	</gazebo>
+	<gazebo reference="link2_v2:1">
+		<selfCollide>true</selfCollide>
+  	</gazebo>
+	<gazebo reference="link1_v2_(1):1">
+		<selfCollide>true</selfCollide>
+    	<material>Gazebo/Blue</material>
+  	</gazebo>
+	<gazebo reference="joint2_v1_(1):1">
+		<selfCollide>true</selfCollide>
+    	<material>Gazebo/Red</material>
+  	</gazebo>
+	<gazebo reference="link2_v2_(1):1">
+		<selfCollide>true</selfCollide>
+  	</gazebo>
+
+	<joint name="rev0" type="continuous">
+		<parent link="body:1"/>
+		<child link="link1_v2:1"/>
+		<origin rpy="0 0 0" xyz="0.011999999999999997 0.0335 0.1495"/>
+		<axis xyz="-1.0 -1.40980701539703e-16 8.814573993291e-18"/>
+		<dynamics damping="0.1"/>
+	</joint>
+	<joint name="rev1" type="continuous">
+		<parent link="link1_v2:1"/>
+		<child link="joint2_v1:1"/>
+		<origin rpy="0 0 0" xyz="-0.012000000000000023 0.07099999999999994 0.0040000000000000036"/>
+		<axis xyz="8.00047779036808e-16 -1.0 -5.326851249972236e-17"/>
+		<dynamics damping="0.001"/>
+	</joint>
+	<joint name="rev2" type="continuous">
+		<parent link="joint2_v1:1"/>
+		<child link="link2_v2:1"/>
+		<origin rpy="0 0 0" xyz="0.013999999999999983 0.00399999999999992 -0.02400000000000002"/>
+		<axis xyz="-1.0 -8.00047779036808e-16 2.2478764675240395e-16"/>
+		<dynamics damping="0.01"/>
+	</joint>
+	<joint name="rev3" type="continuous">
+		<parent link="body:1"/>
+		<child link="link1_v2_(1):1"/>
+		<origin rpy="0 0 0" xyz="-0.012000000000000002 -0.033500000000000016 0.14949999999999997"/>
+		<axis xyz="1.0 7.04903507698513e-17 9.74879955707637e-17"/>
+		<dynamics damping="0.1"/>
+	</joint>
+	<joint name="rev4" type="continuous">
+		<parent link="link1_v2_(1):1"/>
+		<child link="joint2_v1_(1):1"/>
+		<origin rpy="0 0 0" xyz="0.011999999999999997 -0.07099999999999991 -0.0040000000000000036"/>
+		<axis xyz="5.885767267272537e-16 1.0 -6.919616741501298e-17"/>
+		<dynamics damping="0.001"/>
+	</joint>
+	<joint name="rev5" type="continuous">
+		<parent link="joint2_v1_(1):1"/>
+		<child link="link2_v2_(1):1"/>
+		<origin rpy="0 0 0" xyz="-0.014 -0.003999999999999906 -0.02399999999999998"/>
+		<axis xyz="1.0 -5.885767267272537e-16 4.3592574824461216e-16"/>
+		<dynamics damping="0.01"/>
+	</joint>
+
+  	<transmission name="rev0_trans">
+    	<type>transmission_interface/SimpleTransmission</type>
+    	<joint name="rev0">
+    	  	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	</joint>
+    	<actuator name="rev0_motor">
+    	   	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	   	<mechanismReduction>1</mechanismReduction>
+    	</actuator>
+  	</transmission>
+  	<transmission name="rev1_trans">
+    	<type>transmission_interface/SimpleTransmission</type>
+    	<joint name="rev1">
+    	  	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	</joint>
+    	<actuator name="rev1_motor">
+    	   	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	   	<mechanismReduction>1</mechanismReduction>
+    	</actuator>
+  	</transmission>
+  	<transmission name="rev2_trans">
+    	<type>transmission_interface/SimpleTransmission</type>
+    	<joint name="rev2">
+    	  	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	</joint>
+    	<actuator name="rev2_motor">
+    	   	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	   	<mechanismReduction>1</mechanismReduction>
+    	</actuator>
+  	</transmission>
+  	<transmission name="rev3_trans">
+    	<type>transmission_interface/SimpleTransmission</type>
+    	<joint name="rev3">
+    	  	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	</joint>
+    	<actuator name="rev3_motor">
+    	   	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	   	<mechanismReduction>1</mechanismReduction>
+    	</actuator>
+  	</transmission>
+  	<transmission name="rev4_trans">
+    	<type>transmission_interface/SimpleTransmission</type>
+    	<joint name="rev4">
+    	  	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	</joint>
+    	<actuator name="rev4_motor">
+    	   	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	   	<mechanismReduction>1</mechanismReduction>
+    	</actuator>
+  	</transmission>
+  	<transmission name="rev5_trans">
+    	<type>transmission_interface/SimpleTransmission</type>
+    	<joint name="rev5">
+    	  	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	</joint>
+    	<actuator name="rev5_motor">
+    	   	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	   	<mechanismReduction>1</mechanismReduction>
+    	</actuator>
+  	</transmission>
+
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/qross2</robotNamespace>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+      <legacyModeNS>true</legacyModeNS>
+    </plugin>
+  </gazebo>
+
+</robot>

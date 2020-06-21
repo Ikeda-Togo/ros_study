@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <arg name="model" default="$(find qross2)/urdf/model.urdf"/>   
+	
+  <param name="robot_description" command="$(find xacro)/xacro $(arg model)"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+  	<arg name="paused" default="true"/>
+  </include>
+  
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model qross2" />
+
+  <rosparam>
+    qross2:      
+      rev0_joint_position_controller:
+        type: effort_controllers/JointPositionController
+        joint: rev0
+        pid: {p: 0.1, i: 0.00001, d: 0.001}
+      rev1_joint_position_controller:
+        type: effort_controllers/JointVelocityController
+        joint: rev1
+        pid: {p: 0.005, i: 0.0000001, d: 0.00001}
+      rev2_joint_position_controller:
+        type: effort_controllers/JointPositionController
+        joint: rev2
+        pid: {p: 0.1, i: 0.00001, d: 0.001}
+      rev3_joint_position_controller:
+        type: effort_controllers/JointPositionController
+        joint: rev3
+        pid: {p: 0.1, i: 0.00001, d: 0.001}
+      rev4_joint_position_controller:
+        type: effort_controllers/JointVelocityController
+        joint: rev4
+        pid: {p: 0.005, i: 0.0000001, d: 0.00001}
+      rev5_joint_position_controller:
+        type: effort_controllers/JointPositionController
+        joint: rev5
+        pid: {p: 0.1, i: 0.00001, d: 0.001}
+  </rosparam>
+  <node name="controller_spawner" pkg="controller_manager"
+        type="spawner" respawn="false"
+        output="screen" ns="/qross2"
+        args="rev0_joint_position_controller
+				rev1_joint_position_controller
+				rev2_joint_position_controller
+				rev3_joint_position_controller
+				rev4_joint_position_controller
+				rev5_joint_position_controller"/>
+</launch>

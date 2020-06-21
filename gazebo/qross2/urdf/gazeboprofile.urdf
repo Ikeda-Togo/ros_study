@@ -1,0 +1,137 @@
+  	<gazebo reference="body:1">
+    	<material>Gazebo/Red</material>
+  	</gazebo>
+	<gazebo reference="link1_v2:1">
+    	<material>Gazebo/Blue</material>
+  	</gazebo>
+	<gazebo reference="joint2_v1:1">
+    	<material>Gazebo/Red</material>
+  	</gazebo>
+	<gazebo reference="link2_v2:1">
+    	<material>Gazebo/Blue</material>
+  	</gazebo>
+	<gazebo reference="link1_v2_(1):1">
+    	<material>Gazebo/Blue</material>
+  	</gazebo>
+	<gazebo reference="joint2_v1_(1):1">
+    	<material>Gazebo/Red</material>
+  	</gazebo>
+	<gazebo reference="link2_v2_(1):1">
+    	<material>Gazebo/Blue</material>
+  	</gazebo>
+
+	<joint name="rev0" type="continuous">
+		<parent link="body:1"/>
+		<child link="link1_v2:1"/>
+		<origin rpy="0 0 0" xyz="0.03350000000000007 -0.011999999999999924 0.10949999999999999"/>
+		<axis xyz="-7.04903507698512e-17 1.0 8.84733008160923e-32"/>
+		<dynamics damping="0.1"/>
+	</joint>
+  	<transmission name="rev0_trans">
+    	<type>transmission_interface/SimpleTransmission</type>
+    	<joint name="rev0">
+    	  	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	</joint>
+    	<actuator name="rev0_motor">
+    	   	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	   	<mechanismReduction>1</mechanismReduction>
+    	</actuator>
+  	</transmission>
+
+	<joint name="rev1" type="continuous">
+		<parent link="link1_v2:1"/>
+		<child link="joint2_v1:1"/>
+		<origin rpy="0 0 0" xyz="-0.003999999999999993 0.01200000000000009 0.07100000000000006"/>
+		<axis xyz="5.326851249972236e-17 -6.590670774971049e-16 -1.0"/>
+		<dynamics damping="0.1"/>
+	</joint>
+  	<transmission name="rev1_trans">
+    	<type>transmission_interface/SimpleTransmission</type>
+    	<joint name="rev1">
+    	  	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	</joint>
+    	<actuator name="rev1_motor">
+    	   	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	   	<mechanismReduction>1</mechanismReduction>
+    	</actuator>
+  	</transmission>
+
+	<joint name="rev2" type="continuous">
+		<parent link="joint2_v1:1"/>
+		<child link="link2_v2:1"/>
+		<origin rpy="0 0 0" xyz="0.023999999999999983 0.01399999999999998 0.004000000000000198"/>
+		<axis xyz="2.86463423528964e-16 -0.9999999999999991 6.590670774971043e-16"/>
+		<dynamics damping="0.1"/>
+	</joint>
+  	<transmission name="rev2_trans">
+    	<type>transmission_interface/SimpleTransmission</type>
+    	<joint name="rev2">
+    	  	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	</joint>
+    	<actuator name="rev2_motor">
+    	   	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	   	<mechanismReduction>1</mechanismReduction>
+    	</actuator>
+  	</transmission>
+
+
+
+	<joint name="rev3" type="continuous">
+		<parent link="body:1"/>
+		<child link="link1_v2_(1):1"/>
+		<origin rpy="0 0 0" xyz="-0.033499999999999926 0.011999999999999985 0.10949999999999999"/>
+		<axis xyz="7.04903507698521e-17 -1.0 1.72948509006036e-31"/>
+	</joint>
+  	<transmission name="rev3_trans">
+    	<type>transmission_interface/SimpleTransmission</type>
+    	<joint name="rev3">
+    	  	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	</joint>
+    	<actuator name="rev3_motor">
+    	   	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	   	<mechanismReduction>1</mechanismReduction>
+    	</actuator>
+  	</transmission>
+
+	<joint name="rev4" type="continuous">
+		<parent link="link1_v2_(1):1"/>
+		<child link="joint2_v1_(1):1"/>
+		<origin rpy="0 0 0" xyz="0.0039999999999999584 -0.012000000000000007 -0.07099999999999998"/>
+		<axis xyz="-5.3268512499722306e-17 -6.590670774971049e-16 1.0"/>
+	</joint>
+  	<transmission name="rev4_trans">
+    	<type>transmission_interface/SimpleTransmission</type>
+    	<joint name="rev4">
+    	  	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	</joint>
+    	<actuator name="rev4_motor">
+    	   	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	   	<mechanismReduction>1</mechanismReduction>
+    	</actuator>
+  	</transmission>
+
+	<joint name="rev5" type="continuous">
+		<parent link="joint2_v1_(1):1"/>
+		<child link="link2_v2_(1):1"/>
+		<origin rpy="0 0 0" xyz="-0.023999999999999997 -0.013999999999999999 -0.0040000000000000036"/>
+		<axis xyz="1.4548272198926074e-16 1.0 6.590670774971049e-16"/>
+	</joint>
+  	<transmission name="rev5_trans">
+    	<type>transmission_interface/SimpleTransmission</type>
+    	<joint name="rev5">
+    	  	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	</joint>
+    	<actuator name="rev6_motor">
+    	   	<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	   	<mechanismReduction>1</mechanismReduction>
+    	</actuator>
+  	</transmission>
+
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/body_v7</robotNamespace>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+      <legacyModeNS>true</legacyModeNS>
+    </plugin>
+  </gazebo>
+
