@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="body_v13">
+	<link name="body:1">
+		<inertial>
+			<mass value="1.1123813957232302"/>
+			<origin rpy="0 0 0" xyz="2.1108919104935669e-07 3.0571956664531134e-07 0.10949967376834033"/>
+			<inertia ixx="0.005161132436348675" ixy="8.787783467397638e-09" ixz="1.0245667846590236e-08" iyy="0.005161156515367759" iyz="-2.2727890932511973e-08" izz="0.0009178357651283786"/>
+		</inertial>
+		<collision name="body:1_collision">
+			<origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/body.stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</collision>
+		<visual name="body:1_visual">
+			<origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/body.stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</visual>
+	</link>
+	<link name="link1_v1:1">
+		<inertial>
+			<mass value="0.1438001513035621"/>
+			<origin rpy="0 0 0" xyz="0.03401849611410008 0.012000000000125507 0.0038291364440238423"/>
+			<inertia ixx="1.2986893561160785e-05" ixy="5.161094889148693e-16" ixz="5.958600522554036e-06" iyy="5.152738400324175e-05" iyz="6.913620075936318e-17" izz="4.68645331849495e-05"/>
+		</inertial>
+		<collision name="link1_v1:1_collision">
+			<origin rpy="-0.10155215737449719 -1.5707963267948961 -1.4692441694204001" xyz="0.0073282819148806355 0.03308417711006919 -0.003462992787575378"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/link1_v1.stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</collision>
+		<visual name="link1_v1:1_visual">
+			<origin rpy="-0.10155215737449719 -1.5707963267948961 -1.4692441694204001" xyz="0.0073282819148806355 0.03308417711006919 -0.003462992787575378"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/link1_v1.stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</visual>
+	</link>
+	<link name="joint2_v1:1">
+		<inertial>
+			<mass value="0.02355493192185301"/>
+			<origin rpy="0 0 0" xyz="0.003999999999999962 3.108624468950438e-17 -0.006225488817151362"/>
+			<inertia ixx="2.7140185116891758e-06" ixy="3.238940419776024e-21" ixz="0.0" iyy="1.535684268074533e-06" iyz="1.9594252634396705e-20" izz="1.434236571408798e-06"/>
+		</inertial>
+		<collision name="joint2_v1:1_collision">
+			<origin rpy="0.16985703239580824 -1.5707963267948961 -1.7406533591907047" xyz="0.00799999999999998 -0.013999999999999985 -0.027999999999999997"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/joint2_v1.stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</collision>
+		<visual name="joint2_v1:1_visual">
+			<origin rpy="0.16985703239580824 -1.5707963267948961 -1.7406533591907047" xyz="0.00799999999999998 -0.013999999999999985 -0.027999999999999997"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/joint2_v1.stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</visual>
+	</link>
+	<link name="link2_v2:1">
+		<inertial>
+			<mass value="0.11452437673909605"/>
+			<origin rpy="0 0 0" xyz="9.71445146547012e-17 -0.011965007500927419 -0.028827680965637988"/>
+			<inertia ixx="0.00019588661156076247" ixy="1.0356299151581539e-19" ixz="0.0" iyy="0.00019455646851150482" iyz="-1.1552676110503962e-07" izz="5.028672087314057e-06"/>
+		</inertial>
+		<collision name="link2_v2:1_collision">
+			<origin rpy="0.0 -0.0 0.0" xyz="-0.10850000000000003 -0.012000000000000064 -0.08549999999999996"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/link2_v2.stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</collision>
+		<visual name="link2_v2:1_visual">
+			<origin rpy="0.0 -0.0 0.0" xyz="-0.10850000000000003 -0.012000000000000064 -0.08549999999999996"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/link2_v2.stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</visual>
+	</link>
+	<link name="link1_v1_(1):1">
+		<inertial>
+			<mass value="0.1438001513035621"/>
+			<origin rpy="0 0 0" xyz="-0.0340184961141001 -0.011999999999874465 -0.00382913644402387"/>
+			<inertia ixx="1.2986893561160429e-05" ixy="-5.161090008685516e-16" ixz="5.958600522553859e-06" iyy="5.1527384003242104e-05" iyz="-6.913567760374607e-17" izz="4.68645331849495e-05"/>
+		</inertial>
+		<collision name="link1_v1_(1):1_collision">
+			<origin rpy="-3.0400404962152976 1.5707963267948961 -1.4692441694204004" xyz="-0.007328281914880649 0.009084177110069222 0.0034629927875753502"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/link1_v1_(1).stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</collision>
+		<visual name="link1_v1_(1):1_visual">
+			<origin rpy="-3.0400404962152976 1.5707963267948961 -1.4692441694204004" xyz="-0.007328281914880649 0.009084177110069222 0.0034629927875753502"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/link1_v1_(1).stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</visual>
+	</link>
+	<link name="joint2_v1_(1):1">
+		<inertial>
+			<mass value="0.02355493192185301"/>
+			<origin rpy="0 0 0" xyz="-0.0040000000000000036 -3.3306690738754695e-17 -0.006225488817151403"/>
+			<inertia ixx="2.7140185116891758e-06" ixy="2.8919957245803863e-21" ixz="-4.4408920985006264e-20" iyy="1.5356842680743554e-06" iyz="-1.8206473853615222e-20" izz="1.4342365714087535e-06"/>
+		</inertial>
+		<collision name="joint2_v1_(1):1_collision">
+			<origin rpy="-0.004808874594501592 -1.570796326794896 1.5756052013893982" xyz="-0.008000000000000007 0.013999999999999981 -0.02800000000000001"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/joint2_v1_(1).stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</collision>
+		<visual name="joint2_v1_(1):1_visual">
+			<origin rpy="-0.004808874594501592 -1.570796326794896 1.5756052013893982" xyz="-0.008000000000000007 0.013999999999999981 -0.02800000000000001"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/joint2_v1_(1).stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</visual>
+	</link>
+	<link name="link2_v2_(1):1">
+		<inertial>
+			<mass value="0.11452437673909605"/>
+			<origin rpy="0 0 0" xyz="-6.938893903907228e-17 0.013965007500927403 -0.028827680965638015"/>
+			<inertia ixx="0.00019588661156076244" ixy="1.0521097881799335e-19" ixz="8.881784197001253e-20" iyy="0.00019455646851150482" iyz="1.1552676110495566e-07" izz="5.028672087314235e-06"/>
+		</inertial>
+		<collision name="link2_v2_(1):1_collision">
+			<origin rpy="0.0 -0.0 0.0" xyz="0.10849999999999987 0.014000000000000054 -0.0854999999999999"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/link2_v2_(1).stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</collision>
+		<visual name="link2_v2_(1):1_visual">
+			<origin rpy="0.0 -0.0 0.0" xyz="0.10849999999999987 0.014000000000000054 -0.0854999999999999"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/link2_v2_(1).stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</visual>
+	</link>
+	<link name="link1_v1_(2):1">
+		<inertial>
+			<mass value="0.1438001513035621"/>
+			<origin rpy="0 0 0" xyz="0.011999999999874469 -0.03401849611410011 -0.0038291364440238423"/>
+			<inertia ixx="5.1527384003242104e-05" ixy="5.161037301051399e-16" ixz="6.913502546758828e-17" iyy="1.2986893561160785e-05" iyz="5.958600522554036e-06" izz="4.686453318494941e-05"/>
+		</inertial>
+		<collision name="link1_v1_(2):1_collision">
+			<origin rpy="2.9680017768738356 1.570796326794896 -0.1735908767159567" xyz="-0.009084177110069218 -0.007328281914880656 0.003462992787575378"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/link1_v1_(2).stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</collision>
+		<visual name="link1_v1_(2):1_visual">
+			<origin rpy="2.9680017768738356 1.570796326794896 -0.1735908767159567" xyz="-0.009084177110069218 -0.007328281914880656 0.003462992787575378"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/link1_v1_(2).stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</visual>
+	</link>
+	<link name="joint2_v1_(2):1">
+		<inertial>
+			<mass value="0.02355493192185301"/>
+			<origin rpy="0 0 0" xyz="3.1086244689504386e-17 -0.0040000000000000036 -0.0062254888171513895"/>
+			<inertia ixx="1.5356842680743554e-06" ixy="-2.7127128662198238e-21" ixz="1.8180881536216713e-20" iyy="2.7140185116891758e-06" iyz="-4.4408920985006264e-20" izz="1.4342365714087535e-06"/>
+		</inertial>
+		<collision name="joint2_v1_(2):1_collision">
+			<origin rpy="0.016474170227284025 -1.570796326794896 3.125118483362509" xyz="-0.013999999999999981 -0.008000000000000007 -0.02800000000000001"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/joint2_v1_(2).stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</collision>
+		<visual name="joint2_v1_(2):1_visual">
+			<origin rpy="0.016474170227284025 -1.570796326794896 3.125118483362509" xyz="-0.013999999999999981 -0.008000000000000007 -0.02800000000000001"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/joint2_v1_(2).stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</visual>
+	</link>
+	<link name="link2_v2_(2):1">
+		<inertial>
+			<mass value="0.11452437673909605"/>
+			<origin rpy="0 0 0" xyz="-0.013965007500927391 -6.938893903907228e-17 -0.02882768096563803"/>
+			<inertia ixx="0.0001945564685115052" ixy="-1.0434361708000495e-19" ixz="-1.1552676110482118e-07" iyy="0.00019588661156076244" iyz="8.881784197001253e-20" izz="5.028672087314235e-06"/>
+		</inertial>
+		<collision name="link2_v2_(2):1_collision">
+			<origin rpy="0.0 -0.0 0.0" xyz="-0.014000000000000129 0.10849999999999987 -0.08549999999999988"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/link2_v2_(2).stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</collision>
+		<visual name="link2_v2_(2):1_visual">
+			<origin rpy="0.0 -0.0 0.0" xyz="-0.014000000000000129 0.10849999999999987 -0.08549999999999988"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/link2_v2_(2).stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</visual>
+	</link>
+	<link name="link1_v1_(3):1">
+		<inertial>
+			<mass value="0.1438001513035621"/>
+			<origin rpy="0 0 0" xyz="-0.01200000000012552 0.034018496114100086 0.00382913644402387"/>
+			<inertia ixx="5.152738400324175e-05" ixy="-5.160740306339096e-16" ixz="-6.913757118379164e-17" iyy="1.2986893561160785e-05" iyz="5.958600522554036e-06" izz="4.68645331849495e-05"/>
+		</inertial>
+		<collision name="link1_v1_(3):1_collision">
+			<origin rpy="-6.469203331917332e-16 -1.5707963267948961 0.0" xyz="-0.033084177110069196 0.0073282819148806425 -0.0034629927875753502"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/link1_v1_(3).stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</collision>
+		<visual name="link1_v1_(3):1_visual">
+			<origin rpy="-6.469203331917332e-16 -1.5707963267948961 0.0" xyz="-0.033084177110069196 0.0073282819148806425 -0.0034629927875753502"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/link1_v1_(3).stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</visual>
+	</link>
+	<link name="joint2_v1_(3):1">
+		<inertial>
+			<mass value="0.02355493192185301"/>
+			<origin rpy="0 0 0" xyz="1.998401444325281e-17 0.003999999999999962 -0.0062254888171513895"/>
+			<inertia ixx="1.535684268074533e-06" ixy="-3.755535041020433e-21" ixz="1.525571937966317e-20" iyy="2.7140185116891758e-06" iyz="0.0" izz="1.4342365714086648e-06"/>
+		</inertial>
+		<collision name="joint2_v1_(3):1_collision">
+			<origin rpy="2.804219450118488 -1.570796326794896 0.33737320347130517" xyz="-0.014000000000000021 -4.163336342344337e-17 -0.027999999999999983"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/joint2_v1_(3).stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</collision>
+		<visual name="joint2_v1_(3):1_visual">
+			<origin rpy="2.804219450118488 -1.570796326794896 0.33737320347130517" xyz="-0.014000000000000021 -4.163336342344337e-17 -0.027999999999999983"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/joint2_v1_(3).stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</visual>
+	</link>
+	<link name="link2_v2_(3):1">
+		<inertial>
+			<mass value="0.11452437673909605"/>
+			<origin rpy="0 0 0" xyz="0.01196500750092739 8.326672684688674e-17 -0.02882768096563801"/>
+			<inertia ixx="0.0001945564685115052" ixy="-1.0581813203458523e-19" ixz="1.1552676110486958e-07" iyy="0.00019588661156076244" iyz="-8.881784197001253e-20" izz="5.028672087314235e-06"/>
+		</inertial>
+		<collision name="link2_v2_(3):1_collision">
+			<origin rpy="0.0 -0.0 0.0" xyz="0.01199999999999989 -0.10849999999999999 -0.08549999999999995"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/link2_v2_(3).stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</collision>
+		<visual name="link2_v2_(3):1_visual">
+			<origin rpy="0.0 -0.0 0.0" xyz="0.01199999999999989 -0.10849999999999999 -0.08549999999999995"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/link2_v2_(3).stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</visual>
+	</link>
+	<joint name="rev0" type="continuous">
+		<parent link="body:1"/>
+		<child link="link1_v1:1"/>
+		<origin rpy="0 0 0" xyz="0.03350000000000009 -0.011999999999999917 0.10950000000000001"/>
+		<axis xyz="-7.04903507698512e-17 1.0 8.84733008160923e-32"/>
+	</joint>
+	<joint name="rev1" type="continuous">
+		<parent link="link1_v1:1"/>
+		<child link="joint2_v1:1"/>
+		<origin rpy="0 0 0" xyz="0.07099999999999995 0.011999999999999966 -5.551115123125783e-17"/>
+		<axis xyz="-1.0 -1.9665293927085913e-16 7.963827457645336e-18"/>
+	</joint>
+	<joint name="rev2" type="continuous">
+		<parent link="joint2_v1:1"/>
+		<child link="link2_v2:1"/>
+		<origin rpy="0 0 0" xyz="0.003999999999999976 0.012000000000000016 -0.023999999999999994"/>
+		<axis xyz="-1.9665293927085913e-16 1.0 6.008902573025361e-16"/>
+	</joint>
+	<joint name="rev3" type="continuous">
+		<parent link="body:1"/>
+		<child link="link1_v1_(1):1"/>
+		<origin rpy="0 0 0" xyz="-0.03349999999999992 0.011999999999999981 0.10949999999999999"/>
+		<axis xyz="7.04903507698521e-17 -1.0 1.72948509006036e-31"/>
+	</joint>
+	<joint name="rev4" type="continuous">
+		<parent link="link1_v1_(1):1"/>
+		<child link="joint2_v1_(1):1"/>
+		<origin rpy="0 0 0" xyz="-0.07099999999999994 -0.012000000000000028 -2.7755575615628914e-17"/>
+		<axis xyz="1.0 -5.567223773115603e-17 1.1450085245709002e-16"/>
+	</joint>
+	<joint name="rev5" type="continuous">
+		<parent link="joint2_v1_(1):1"/>
+		<child link="link2_v2_(1):1"/>
+		<origin rpy="0 0 0" xyz="-0.004000000000000017 -0.014000000000000007 -0.024000000000000063"/>
+		<axis xyz="5.567223773115633e-17 1.0 -7.233549372172716e-16"/>
+	</joint>
+	<joint name="rev6" type="continuous">
+		<parent link="body:1"/>
+		<child link="link1_v1_(2):1"/>
+		<origin rpy="0 0 0" xyz="-0.011999999999999922 -0.03349999999999991 0.10949999999999997"/>
+		<axis xyz="1.0 7.04903507698512e-17 9.74879955707637e-17"/>
+	</joint>
+	<joint name="rev7" type="continuous">
+		<parent link="link1_v1_(2):1"/>
+		<child link="joint2_v1_(2):1"/>
+		<origin rpy="0 0 0" xyz="0.012000000000000033 -0.07099999999999995 -2.7755575615628914e-17"/>
+		<axis xyz="5.567223773115672e-17 1.0 -6.919616741501303e-17"/>
+	</joint>
+	<joint name="rev8" type="continuous">
+		<parent link="joint2_v1_(2):1"/>
+		<child link="link2_v2_(2):1"/>
+		<origin rpy="0 0 0" xyz="0.014000000000000018 -0.004000000000000017 -0.024000000000000063"/>
+		<axis xyz="-1.0 5.567223773115686e-17 -8.208429327880351e-16"/>
+	</joint>
+	<joint name="rev9" type="continuous">
+		<parent link="body:1"/>
+		<child link="link1_v1_(3):1"/>
+		<origin rpy="0 0 0" xyz="0.012000000000000087 0.033500000000000085 0.10949999999999999"/>
+		<axis xyz="-1.0 -1.40980701539703e-16 8.814573993291e-18"/>
+	</joint>
+	<joint name="rev10" type="continuous">
+		<parent link="link1_v1_(3):1"/>
+		<child link="joint2_v1_(3):1"/>
+		<origin rpy="0 0 0" xyz="-0.011999999999999962 0.07099999999999997 0.0"/>
+		<axis xyz="2.67143290040711e-16 -1.0 -5.326851249972244e-17"/>
+	</joint>
+	<joint name="rev11" type="continuous">
+		<parent link="joint2_v1_(3):1"/>
+		<child link="link2_v2_(3):1"/>
+		<origin rpy="0 0 0" xyz="-0.012000000000000014 0.003999999999999934 -0.024000000000000035"/>
+		<axis xyz="-1.0 -2.6714329004071103e-16 6.09704831295827e-16"/>
+	</joint>
+</robot>
