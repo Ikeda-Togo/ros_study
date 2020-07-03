@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="body_v1">
+	<link name="body:1">
+		<inertial>
+			<mass value="0.3652864079430611"/>
+			<origin rpy="0 0 0" xyz="-0.00017572242614011097 -9.739210115690606e-05 0.1854214332247067"/>
+			<inertia ixx="0.002538259715486214" ixy="7.594190529510899e-09" ixz="-3.2705754500244184e-07" iyy="0.002538041356676756" iyz="-7.927567449659417e-08" izz="0.000905322245372182"/>
+		</inertial>
+		<collision name="body:1_collision">
+			<origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/body.stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</collision>
+		<visual name="body:1_visual">
+			<origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0"/>
+			<geometry>
+				<mesh filename="package://qross2/meshes/body.stl" scale="1.0 1.0 1.0"/>
+			</geometry>
+		</visual>
+	</link>
+</robot>
